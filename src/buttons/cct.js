@@ -8,7 +8,7 @@ module.exports = async (client, interaction) => {
 				client.channels.cache
 					.get('1169793238350180432')
 					.send(
-						`ID do usuário que arquivou: ${interaction.user.id}\n\nThread: ${interaction.channel}`,
+						`ID do usuário que arquivou: ${interaction.user}\n\nThread: ${interaction.channel}`,
 					);
 				interaction.channel.setArchived(true);
 			}, 5000);
