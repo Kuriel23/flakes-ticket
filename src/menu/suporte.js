@@ -50,6 +50,11 @@ module.exports = async (client, interaction) => {
 				embeds: [embed],
 				components: [botao],
 			});
+			client.channels.cache
+					.get('1169793238350180432')
+					.send(
+						`ID do usuário que abriu: ${interaction.user.id}\n\nThread: ${c}`,
+					);
 			return interaction.editReply({
 				content: `Seu ticket foi aberto em ${c}.`,
 				ephemeral: true,
