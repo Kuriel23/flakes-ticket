@@ -21,10 +21,11 @@ module.exports = async (client, message) => {
 	);
 	const embed = new discord.EmbedBuilder()
 		.setColor(client.cor)
-		.setTitle('Central de atendimento do Flakes Power')
+		.setTitle('Central de atendimento - Canal Flakes Power')
 		.setDescription(
-			`Agora, com o sistema de Atendimento, você tem a oportunidade de obter suporte e tirar dúvidas de premiações. Queremos garantir que sua voz seja ouvida e seus problemas resolvidos da melhor maneira possível. Conte conosco para uma experiência ainda mais satisfatória.`,
-		);
+			`Se você tiver alguma dúvida, pergunta ou sugestão, selecione "Suporte" aqui em abaixo para entrar em contato com a equipe!\n\nSe você tiver ganhado alguma premiação em algum evento, selecione "Premiação" aqui no menu abaixo para resgatar!`,
+		)
+		.setThumbnail("https://cdn.discordapp.com/attachments/1095010254439333928/1169809869893800036/APkrFKaxwyhL1GHo0vS4h4YIW6YEZhvafGqDmFRxeyMLOQs900-c-k-c0x00ffffff-no-rj.png");
 	message.channel.send({ embeds: [embed], components: [row] });
 };
 
