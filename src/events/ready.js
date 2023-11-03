@@ -52,7 +52,7 @@ module.exports = async (client) => {
     }
   })();
   client.user.setPresence({
-    activities: [{ name: `Vamo jogar um vava?`, type: 4 }],
+    activities: [{ name: `Vamo um fortnite?`, type: 4 }],
     status: "dnd",
   });
 
