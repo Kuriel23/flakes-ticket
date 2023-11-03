@@ -13,7 +13,7 @@ module.exports = async (client, interaction) => {
 		})
 		.setColor(client.cor)
 		.setDescription(
-			`Olá, ${interaction.user}. Boas vindas ao seu ticket!\n\nPara facilitar o processo, por favor escreva a sua dúvida de forma legível.`,
+			`Olá, ${interaction.user}. Boas vindas ao seu ticket!\n\nNeste canal você poderá sanar suas dúvidas ou reportar algum problema relacionado ao servidor.\n\nPara agilizar o processo, seja claro com o que deseja para que possamos te atender da melhor maneira possível.`,
 		);
 
 	const botao = new discord.ActionRowBuilder().addComponents(
